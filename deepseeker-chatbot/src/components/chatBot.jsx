@@ -32,7 +32,7 @@ const ChatBot = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.REACT_APP_DEEPSEEK_API_KEY}`,
+          Authorization: `Bearer ${import.meta.env.VITE_APP_DEEPSEEK_API_KEY}`,
           "HTTP-Referer": "http://localhost:3000",
           "X-Title": "Naan Muthazhvan ChatBot",
         },
